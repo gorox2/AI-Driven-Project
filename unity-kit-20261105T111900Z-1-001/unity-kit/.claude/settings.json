@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "default",
+    "deny": [
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git push --force-with-lease *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean *)",
+      "Bash(git branch -D *)",
+      "PowerShell(git push --force *)",
+      "PowerShell(git push -f *)",
+      "PowerShell(git push --force-with-lease *)",
+      "PowerShell(git reset --hard *)",
+      "PowerShell(git clean *)",
+      "PowerShell(git branch -D *)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*.keystore)",
+      "Read(~/.ssh/**)",
+      "Read(~/.git-credentials)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "PowerShell(git commit *)",
+      "PowerShell(git push *)"
+    ],
+    "allow": [
+      "Bash(unity status *)",
+      "Bash(unity pipeline list *)",
+      "Bash(unity command)",
+      "Bash(unity command --query *)",
+      "Bash(unity command editor status *)",
+      "Bash(unity command scene get_hierarchy *)",
+      "Bash(unity command scene list_open *)",
+      "Bash(unity command gameobject find *)",
+      "Bash(unity command component get_fields *)",
+      "Bash(unity command console get *)",
+      "Bash(unity command console status *)",
+      "Bash(unity command script recompile *)",
+      "Bash(unity command script recompile_status *)",
+      "PowerShell(unity status *)",
+      "PowerShell(unity pipeline list *)",
+      "PowerShell(unity command)",
+      "PowerShell(unity command --query *)",
+      "PowerShell(unity command editor status *)",
+      "PowerShell(unity command scene get_hierarchy *)",
+      "PowerShell(unity command scene list_open *)",
+      "PowerShell(unity command gameobject find *)",
+      "PowerShell(unity command component get_fields *)",
+      "PowerShell(unity command console get *)",
+      "PowerShell(unity command console status *)",
+      "PowerShell(unity command script recompile *)",
+      "PowerShell(unity command script recompile_status *)"
+    ]
+  }
+}

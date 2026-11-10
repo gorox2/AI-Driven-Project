@@ -1,38 +1,43 @@
-# [Working title] · One-page HLD
+# Cave of Gold · One-page HLD
 
-> High-level design. Keep it to one page. Every line should be something you can explain and defend.
-> Home Assignment 01 needs every section below, on one page.
+> Reviewed HA01 design; provisional controls and unresolved choices are explicit.
 
-**One-line pitch:** [Who the player is, what they do, and what makes it different, in one sentence.]
+**One-line pitch:** Play Token, a retired treasure hunter, and combine firearms with a versatile hook to fight through the military and escape Kroskow town.
 
-**Genre · view · platform:** [e.g. 2D top-down arena · Windows]
+**Genre · view · platform:** Single-player action shooter/platformer · 2.5D: 3D characters and environments, side-on orthographic camera, movement constrained to a plane · PC · Unity 6.3.
 
 ## Target experience
 
-[What should the player feel? One or two sentences. Every feature has to serve this.]
+Feel like a powerful, resourceful fighter whose experience with weapons and tools helps him overcome military opposition and traversal obstacles.
 
 ## Core loop
 
-[The action the player repeats, in 3-4 verbs: verb → verb → verb → back to the start.
-What does one pass through the loop give the player for the next one?]
+Traverse → engage → overcome → advance. Combat and traversal can overlap: Token can aim and shoot while swinging. Each obstacle or encounter brings him closer to escape; fixed progression points add an SMG and enemy pulling.
 
 ## Win and lose conditions
 
-- **Win:** [How does a run, a level or the game end well?]
-- **Lose:** [How does it end badly, and what happens next (retry, checkpoint, game over)?]
+- **Win:** Defeat the minigun boss and leave town, ending the demo.
+- **Lose:** On death, respawn at the last checkpoint with restored health and encounter state. Weapon and skill unlocks remain available.
 
 ## Controls
 
-[Keys or buttons, and what each one does.]
+WASD: movement; Space: jump; mouse: free targeting; left-click: shoot; right-click: use hook (hold to maintain attachment/swing, release to detach); hold W while attached with right-click to climb up the rope; Left Ctrl: aim. The hook stays attached while the mouse aims the gun independently. These controls are provisional and may be refined through playtesting. Quickfire behaviour, whether shooting requires aiming, rope descent and pulling inputs remain open.
 
 ## Must-have features
 
-[Copy the Musts from Backlog.md. Together they make a complete game from main menu to ending.]
+- Main menu, playable start and clear escape ending.
+- 2.5D movement, jumping and side-on camera.
+- One shortened Kroskow level: rooftops, streets and building interiors; target 10–25 minutes.
+- Starting revolver and fixed-point SMG unlock; aiming and shooting while swinging.
+- Early hook pickup at Token's car; swinging, rope climbing and moving objects available on pickup.
+- Fixed-point enemy-pull unlock; shield soldiers require pulling to break guard before damage.
+- Firearm soldiers and a protected minigun boss that resists pulling and is vulnerable during firing pauses.
+- Health, death and checkpoint retries preserving unlocks.
 
 ## Look and sound
 
-[One or two lines on art style and audio. Placeholder art is fine until Home Assignment 04.]
+Night-time town, dark blue sky and lit background windows; 3D presentation with modest visual demands. Detailed style and sound direction remain open. Initial placeholders are acceptable; HA04 calls for AI-made visuals, music, SFX and UI. Third-party asset permission is unresolved.
 
 ## Out of scope this semester
 
-[The "Won't" items from Backlog.md, so nobody, including Claude, adds them by accident.]
+Multiplayer, military-to-monster transition, motorcycle section and levels beyond Kroskow. Optional additions are Could items in the backlog.

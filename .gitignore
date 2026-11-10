@@ -1,0 +1,62 @@
+# Unity-generated folders (the Unity project is nested inside this repository)
+/AI_Driven_CaveOfGold/[Ll]ibrary/
+/AI_Driven_CaveOfGold/[Tt]emp/
+/AI_Driven_CaveOfGold/[Oo]bj/
+/AI_Driven_CaveOfGold/[Ll]ogs/
+/AI_Driven_CaveOfGold/[Uu]ser[Ss]ettings/
+/AI_Driven_CaveOfGold/[Bb]uild/
+/AI_Driven_CaveOfGold/[Bb]uilds/
+/AI_Driven_CaveOfGold/[Mm]emory[Cc]aptures/
+/AI_Driven_CaveOfGold/[Rr]ecordings/
+/AI_Driven_CaveOfGold/.utmp/
+/AI_Driven_CaveOfGold/UIElementsSchema/
+/AI_Driven_CaveOfGold/*_BackUpThisFolder_ButDontShipItWithYourGame/
+/AI_Driven_CaveOfGold/*_BurstDebugInformation_DoNotShip/
+
+# Generated IDE files and local caches
+.vs/
+.gradle/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.DotSettings.user
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Logs, crash reports and temporary files
+*.log
+*.tmp
+mono_crash.*
+/AI_Driven_CaveOfGold/sysinfo.txt
+
+# Generated/recovery content; keep normal Assets and their .meta files
+/AI_Driven_CaveOfGold/Assets/Plugins/Editor/JetBrains*
+/AI_Driven_CaveOfGold/Assets/_Recovery/
+/AI_Driven_CaveOfGold/Assets/_Recovery.meta
+/AI_Driven_CaveOfGold/Assets/**/*.blend1
+/AI_Driven_CaveOfGold/Assets/**/*.blend1.meta
+
+# Local credentials and personal tool settings
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+.claude/worktrees/
+
+# Operating-system clutter
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Intentionally tracked: Assets/ (including .meta), Packages/,
+# ProjectSettings/, course Docs/, AGENTS.md and shared tool configuration.

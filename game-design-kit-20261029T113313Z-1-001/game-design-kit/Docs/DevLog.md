@@ -59,3 +59,17 @@ These reviewed entries reconstruct the design work from the chats “Clarify gam
 - Time spent: approximatly 2-3 hrs.
 
 Agent check evidence (separate from developer verification): reviewed both identified chats and the current documents; reconstructed dated entries and checked document changes for whitespace errors. No gameplay testing was performed. The developer confirmed session grouping and supplied all three verification fields and approximate durations. Exact model identifiers remain unknown.
+
+## 2026-11-12 · Session 4 · HA02 movement and jumping
+
+- Goal: Define and prototype Token's 2.5D movement and jump for the Lesson 7 playable loop.
+- Model: Codex. Exact model identifier was not recorded.
+- Key prompts: “now lets write the AGENT.md file together”, “yes air steering”, and “lets do it” after approving the movement spec.
+- What the AI produced: A draft AGENT.md, the movement and jumping spec, PlayerMovement.cs, a placeholder MovementTest scene, and a Play Mode measurement run.
+- Accepted: The developer approved AGENT.md for now and approved A/D movement, Space jump, air steering, W/S reserved, the 5-unit-per-second and 1.5-unit starting targets, one jump per press, and cancellation when A and D are held together. Implementation review is pending.
+- Changed (and why): Added Unity Pipeline so the agent could create the scene through the Editor. Routed the simulated keyboard to the Game view for the measurement run after the first run registered no input.
+- Rejected (and why): Camera follow, hook movement, combat, animation, and checkpoints were left outside this movement spec.
+- How I verified it: read the docs, made sure everything is aligned together. then play tested the movement and jump feature, made sure it works good and is aligned to what is written in its feature spec file.
+- Time spent: 30-45 mins
+
+Agent check evidence: All five numbered criteria passed with simulated keyboard input. Travel was 4.882 units in either direction, stopping displacement was 0.000, jump rise was 1.446, Token reversed direction in the air, W and S left Token stationary, and depth drift was 0.0000. The Editor logged a URP shader asset error during scene rendering.
